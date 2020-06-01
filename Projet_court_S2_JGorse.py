@@ -1,4 +1,5 @@
 import math
+import pathlib
 
 """The number of points to compute on an atom's sphere"""
 SPHERE_POINTS_COUNT = 100
@@ -108,8 +109,6 @@ class Atom:
         'H': 1.2,
         'C': 1.7,
         'N': 1.55,
-        #TODO: wikipedia says 1.52A for Oxygen
-        #'O': 1.52,
         'O': 1.4,
         'F': 1.47,
         'P': 1.8,
@@ -201,7 +200,6 @@ class Atom:
 """
 Main Program
 """
-
 
 print('\n-START Génération des atomes...')
 atoms = Atom.read_pdb('./inputs/CD59_2J8B.pdb')
